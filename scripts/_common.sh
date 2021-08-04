@@ -5,7 +5,8 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="xwiki-tomcat9-pgsql"
+xwiki_version="13.6"
+pkg_dependencies="xwiki-tomcat9-pgsql=$xwiki_version"
 
 #=================================================
 # PERSONAL HELPERS

@@ -112,6 +112,9 @@ ynh_script_progression --message="Installing dependencies..." --time --weight=1
 ###		- As well as the section "REINSTALL DEPENDENCIES" in the restore script
 ###		- And the section "UPGRADE DEPENDENCIES" in the upgrade script
 
+wget -q "https://maven.xwiki.org/public.gpg" -O- | sudo apt-key add -
+sudo wget "https://maven.xwiki.org/stable/xwiki-stable.list" -P /etc/apt/sources.list.d/
+
 ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
